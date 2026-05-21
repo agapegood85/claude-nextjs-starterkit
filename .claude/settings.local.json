@@ -17,5 +17,9 @@
       "Bash(node playwright-verify.mjs)",
       "Bash(npm install *)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "enableAllProjectMcpServers": true
 }
