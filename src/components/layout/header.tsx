@@ -33,7 +33,7 @@ export function Header() {
             홈
           </Link>
           <Link
-            href="#features"
+            href="/#features"
             className="text-foreground/60 transition-colors hover:text-foreground"
           >
             기능
@@ -67,10 +67,10 @@ export function Header() {
           </DropdownMenu>
 
           <div className="hidden items-center gap-2 md:flex">
-            <Button variant="ghost" size="sm" render={<Link href="/login" />}>
+            <Button variant="ghost" size="sm" nativeButton={false} render={<Link href="/login" />}>
               로그인
             </Button>
-            <Button size="sm" render={<Link href="/register" />}>
+            <Button size="sm" nativeButton={false} render={<Link href="/register" />}>
               시작하기
             </Button>
           </div>
@@ -89,17 +89,17 @@ export function Header() {
                 <Link href="/" className="text-lg font-medium">
                   홈
                 </Link>
-                <Link href="#features" className="text-lg font-medium">
+                <Link href="/#features" className="text-lg font-medium">
                   기능
                 </Link>
                 <Link href="/dashboard" className="text-lg font-medium">
                   대시보드
                 </Link>
                 <div className="mt-4 flex flex-col gap-2">
-                  <Button variant="outline" render={<Link href="/login" />}>
+                  <Button variant="outline" nativeButton={false} render={<Link href="/login" />}>
                     로그인
                   </Button>
-                  <Button render={<Link href="/register" />}>시작하기</Button>
+                  <Button nativeButton={false} render={<Link href="/register" />}>시작하기</Button>
                 </div>
               </nav>
             </SheetContent>

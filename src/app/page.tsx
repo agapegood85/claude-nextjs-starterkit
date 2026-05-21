@@ -22,7 +22,7 @@ export default function HomePage() {
             <p className="mx-auto mb-8 max-w-xl text-lg text-muted-foreground">
               회원가입하고 대시보드에서 모든 기능을 확인해보세요.
             </p>
-            <Button size="lg" render={<Link href="/register" />}>
+            <Button size="lg" nativeButton={false} render={<Link href="/register" />}>
               무료로 시작하기
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

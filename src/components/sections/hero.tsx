@@ -28,11 +28,11 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
-          <Button size="lg" render={<Link href="/dashboard" />}>
+          <Button size="lg" nativeButton={false} render={<Link href="/dashboard" />}>
             대시보드 보기
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button size="lg" variant="outline" render={<Link href="/register" />}>
+          <Button size="lg" variant="outline" nativeButton={false} render={<Link href="/register" />}>
             무료로 시작하기
           </Button>
         </div>
